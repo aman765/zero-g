@@ -66,13 +66,8 @@
     "@storybook/react": "^5.3.13"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint . --fix",
-      "git add"
-    ],
-    "src/**/*.scss": [
-      "stylelint --syntax scss --fix",
-      "git add"
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
     ]
   },
   "husky": {
